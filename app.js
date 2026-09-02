@@ -37,7 +37,7 @@ app.get("/", async (req, res) => {
         const items = await itemService.getAllItems();
         const employees = await userService.getAllEmployees();
 
-        res.render("home", {
+        res.render("index", {
             items,
             employees
         });
