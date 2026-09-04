@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Alumix | Premium Aluminum Products</title>
@@ -34,10 +35,18 @@
     <div class="products-hero-bg">
 
       <picture>
-        <source media="(max-width: 767px)"  srcset="/images/Image_844px.jpg">
-        <source media="(max-width: 1365px)" srcset="/images/Image_1024px.jpg">
-        <source media="(max-width: 1919px)" srcset="/images/Image_1600px.jpg">
-        <img class="products-hero-img" src="/images/Image_1920px.jpg" alt="Alumix aluminum products" loading="eager">
+        <source media="(max-width: 767px)" srcset="/images/Image_844px.jpg">
+        <source media="(max-width: 1365px)" srcset="/images/Image_1366px.jpg">
+        <source media="(max-width: 1919px)" srcset="/images/Image_1920px.jpg">
+        <source media="(max-width: 2559px)" srcset="/images/Image_2560px.jpg">
+
+        <img
+          class="products-hero-img"
+          src="/images/Image_3840px.jpg"
+          alt="Alumix aluminum products"
+          loading="eager"
+          fetchpriority="high"
+        >
       </picture>
 
       <div class="products-hero-overlay"></div>
@@ -47,6 +56,7 @@
           <span data-en="Our" data-ar="منتجاتنا">Our</span>
           <span class="highlight">Products</span>
         </h1>
+
         <p
           class="products-subtitle"
           data-en="Experience excellence in aluminum engineering. Our comprehensive range of premium profiles and custom solutions are meticulously crafted to meet the highest industry standards and exceed your expectations."
@@ -57,18 +67,24 @@
           to meet the highest industry standards and exceed your expectations.
         </p>
       </div>
-
     </div>
   </section>
 
   <!-- Products List -->
   <div class="container">
     <div class="products-list">
+
       <% items.forEach((item, index) => { %>
+
         <div class="product-card scroll-animate">
+
           <div class="product-image">
-            <img src="<%= item.photo || '/images/placeholder.jpg' %>" alt="<%= item.title %>">
+            <img
+              src="<%= item.photo || '/images/placeholder.jpg' %>"
+              alt="<%= item.title %>"
+            >
           </div>
+
           <div class="product-content">
 
             <% if (item.label) { %>
@@ -85,7 +101,9 @@
 
           </div>
         </div>
+
       <% }) %>
+
     </div>
   </div>
 
