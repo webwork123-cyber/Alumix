@@ -16,10 +16,16 @@
   <section class="hero">
     <div class="hero-bg">
       <picture>
-        <source media="(max-width: 767px)"  srcset="/images/Image_844px.jpg">
-        <source media="(max-width: 1365px)" srcset="/images/Image_1024px.jpg">
-        <source media="(max-width: 1919px)" srcset="/images/Image_1600px.jpg">
-        <img class="hero-bg-img" src="/images/Image_1920px.jpg" alt="Alumix hero background">
+        <source media="(max-width: 767px)" srcset="/images/Image_844px.jpg">
+        <source media="(max-width: 1365px)" srcset="/images/Image_1366px.jpg">
+        <source media="(max-width: 1919px)" srcset="/images/Image_1920px.jpg">
+        <source media="(max-width: 2559px)" srcset="/images/Image_2560px.jpg">
+        <img
+          class="hero-bg-img"
+          src="/images/Image_3840px.jpg"
+          alt="Alumix hero background"
+          fetchpriority="high"
+        >
       </picture>
     </div>
     <div class="hero-overlay"></div>
