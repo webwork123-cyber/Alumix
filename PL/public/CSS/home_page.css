@@ -2061,6 +2061,8 @@ body.rtl .hero-content > .subtitle {
 }
 
 /* Stronger shadow + dark backing so white text holds up on bright metal */
+body:not(.rtl) .hero h1,
+body:not(.rtl) .hero .subtitle,
 body.rtl .hero h1,
 body.rtl .hero .subtitle {
   text-shadow:
