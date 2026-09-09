@@ -2103,3 +2103,63 @@ body.rtl .hero .btn {
     padding: clamp(5px,1vw,7px) clamp(14px,2.8vw,20px) !important;
   }
 }
+
+/* ================================================================
+   FINAL RTL HERO ALIGNMENT
+   Supports the site toggle and browser-provided RTL direction.
+================================================================ */
+body.rtl .hero-content,
+body.arabic-language .hero-content,
+html[dir="rtl"] .hero-content {
+  direction: rtl !important;
+  align-items: flex-end !important;
+  text-align: right !important;
+}
+
+body.rtl .hero-content > h1,
+body.rtl .hero-content > .subtitle,
+body.arabic-language .hero-content > h1,
+body.arabic-language .hero-content > .subtitle,
+html[dir="rtl"] .hero-content > h1,
+html[dir="rtl"] .hero-content > .subtitle {
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  align-self: flex-end !important;
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+body.rtl .hero-content > .cta-group,
+body.rtl .hero-content > .hero-actions,
+body.rtl .hero-content > #langToggle,
+body.arabic-language .hero-content > .cta-group,
+body.arabic-language .hero-content > .hero-actions,
+body.arabic-language .hero-content > #langToggle,
+html[dir="rtl"] .hero-content > .cta-group,
+html[dir="rtl"] .hero-content > .hero-actions,
+html[dir="rtl"] .hero-content > #langToggle {
+  width: fit-content !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  align-self: flex-end !important;
+}
+
+body.rtl .hero-content > .cta-group,
+body.rtl .hero-content > .hero-actions,
+body.arabic-language .hero-content > .cta-group,
+body.arabic-language .hero-content > .hero-actions,
+html[dir="rtl"] .hero-content > .cta-group,
+html[dir="rtl"] .hero-content > .hero-actions {
+  direction: rtl !important;
+  justify-content: flex-start !important;
+}
+
+@media (max-width: 768px) {
+  body.rtl .hero-content,
+  body.arabic-language .hero-content,
+  html[dir="rtl"] .hero-content {
+    padding-right: 4% !important;
+    padding-left: 4% !important;
+  }
+}
