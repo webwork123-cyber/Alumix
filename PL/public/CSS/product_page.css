@@ -78,10 +78,11 @@
 }
 
 .products-hero h1 .highlight {
-  background: linear-gradient(135deg, #4dd0e1 0%, #26c6da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #4dd0e1 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #4dd0e1 !important;
 }
 
 /* Subtitle */
