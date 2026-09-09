@@ -120,19 +120,11 @@ a {
 }
 
 .about-hero h1 .highlight {
-  color: var(--cyan);
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--cyan),
-      var(--cyan-dark)
-    );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
+  color: #4dd0e1 !important;
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  -webkit-text-fill-color: #4dd0e1 !important;
 }
 
 
